@@ -28,7 +28,7 @@ def normalize_attr(root):
         value = el.get("value")
         attr = el.get("attr").lower()
         # Additional conversion of values
-        if attr == 'catalogid' or attr == 'DocumentId' or attr == 'spid':
+        if attr == 'catalogid' or attr == 'documentid' or attr == 'spid':
             value = value.lower()
         root.set(attr, value)
     for child in root:
